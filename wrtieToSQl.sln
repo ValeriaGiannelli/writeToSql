@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteToSql", "ProvaService\WriteToSql.csproj", "{BD471507-C2D6-4C20-A856-83B956E2A9DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLServiceLibrary", "SQLServiceLibrary\SQLServiceLibrary.csproj", "{87138C93-153C-4BED-B18C-DA9A8F8E4A3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD471507-C2D6-4C20-A856-83B956E2A9DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD471507-C2D6-4C20-A856-83B956E2A9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD471507-C2D6-4C20-A856-83B956E2A9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD471507-C2D6-4C20-A856-83B956E2A9DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87138C93-153C-4BED-B18C-DA9A8F8E4A3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87138C93-153C-4BED-B18C-DA9A8F8E4A3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87138C93-153C-4BED-B18C-DA9A8F8E4A3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87138C93-153C-4BED-B18C-DA9A8F8E4A3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {863C6AAB-D59C-4BC5-AAC8-3AEAE523D399}
+	EndGlobalSection
+EndGlobal
