@@ -7,6 +7,7 @@ Applicazione progettata per essere eseguita come **servizio Windows** il quale i
 - Inserisce i dati nella tabella di SQL nelle colonne Message e LoggedAt ogni 5 secondi per monitorare l'esecuzione periodica del servizio.
 - Scrive le stesse informazioni in un file di log per verifica del funzionamento.
 - Gestisce automaticamente la creazione della directory e del file di log se non esistono.
+- Secondo servizio per cancellare periodicamente le prime 5 righe della tabella.
 
 ## Requisiti
 - **.NET Framework 4.0 o superiore**
@@ -15,11 +16,11 @@ Applicazione progettata per essere eseguita come **servizio Windows** il quale i
 
 ## Installazione
 1. Compila il progetto in **Visual Studio 2022** o una versione compatibile.
-2. Usa lo strumento `InstallUtil.exe` per installare il servizio. Ad esempio:
+2. Usa lo strumento `InstallUtil.exe` per installare i servizi. Ad esempio:
    ```cmd
    cd C:\Windows\Microsoft.NET\Framework\v4.0.30319
    InstallUtil.exe "PercorsoCompleto\ProvaService.exe"
-3. Avvia il servizio tramite **Gestione servizi** di Windows o col comando:
+3. Avvia i servizi tramite **Gestione servizi** di Windows o col comando:
    ```cmd
    sc start ProvaService
 
@@ -75,6 +76,7 @@ Il servizio è stato richiamato alle [data e ora]
 
 - OnElapsedTime:
   - Eseguito ogni 5 secondi. Registra l'ora corrente nel file di log e nella tabella del db.
+  - Eseguito ogni 15 secondi. Cancella le prime 5 righe della tabella precedentemente creata.
 - OnStop:
   - Ferma il servizio e registra un messaggio nel file di log e nella tabella del db.
 
